@@ -24,7 +24,7 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_TELEGRAM_IDS", "").split(",") if x.strip()}
-PRICE_INR = 2000
+PRICE_INR = 5
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
