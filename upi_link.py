@@ -17,7 +17,7 @@ load_dotenv()
 
 UPI_VPA = os.getenv("UPI_VPA")          # e.g. yourname@okhdfcbank
 PAYEE_NAME = os.getenv("PAYEE_NAME", "UPPCS Prelims")
-AMOUNT_INR = 2000
+AMOUNT_INR = 5
 
 
 def build_upi_link(telegram_id: int, note_code: str) -> str:
